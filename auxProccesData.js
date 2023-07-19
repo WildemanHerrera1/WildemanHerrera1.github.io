@@ -11,3 +11,9 @@ function buscarNumeroEnClaves(numero, fechas) {
     }
     return null; // Retornar null si no se encuentra el número en las claves
   }
+
+  function buscarData(){
+    let elemento = document.getElementById("numeroDocumento");
+    let valorBuscado = elemento.value;
+    let dataLista = ejecutarBusqueda(valorBuscado);
+  }

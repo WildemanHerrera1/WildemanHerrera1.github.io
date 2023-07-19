@@ -42,7 +42,7 @@ label.numeroDocumento{
 input#numeroDocumento{
     margin: 10px;
     background-color: #f2f2f2;
-    border: none;
+    border: 1px solid #bee5f2;
     border-radius: 30px;
     height: 50px;
     width: 65%;
@@ -113,6 +113,10 @@ button.btnBuscar{
 .cuadro6,
 .cuadro7 {
   background-color: #252944;
+}
+
+input:focus {
+  outline: 0.8px solid #8cc5d7;
 }
 
 
