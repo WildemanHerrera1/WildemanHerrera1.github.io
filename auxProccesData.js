@@ -12,19 +12,25 @@ function buscarNumeroEnClaves(numero, fechas) {
     return null; // Retornar null si no se encuentra el número en las claves
   }
 
-  function buscarData(){
-    let elemento = document.getElementById("numeroDocumento");
-    let info = document.getElementById("mostrarData");
-    if(info.style.display != 'block'){
-      info.style.display = 'block';
-    }
-    let valorBuscado = elemento.value;
-    if(valorBuscado != ''){
-      ejecutarBusqueda(valorBuscado);
-    }else{
-      info.style.display = 'none';
-    }
+function buscarData(){
+  let elemento = document.getElementById("numeroDocumento");
+  let info = document.getElementById("mostrarData");
+  if(info.style.display != 'block'){
+    info.style.display = 'block';
   }
+  let valorBuscado = elemento.value;
+  if(valorBuscado != ''){
+    ejecutarBusqueda(valorBuscado);
+  }else{
+    info.style.display = 'none';
+  }  
+}
+
+function buscarDataAux(event){
+  if(event.keyCode === 13){
+    buscarData();
+  }
+}
 
   // Función para generar el contenido en formato HTML
 function generateContent(item) {
