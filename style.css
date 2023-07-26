@@ -5,14 +5,21 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   width: 100%;
   height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', 'sans-serif';
 }
 
 /* Estilos para pantallas pequeñas (teléfonos móviles) */
-@media (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
   .ladoIzquierdo {
       width: 100%;
       float: none;
@@ -27,6 +34,10 @@ body {
   .contenedorCuadros {
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 10px;
+  }
+
+  input#numeroDocumento {
+    letter-spacing: 0.1rem;
   }
 }
 
@@ -75,12 +86,12 @@ body {
 
 h1.tituloPrincipal {
   font-weight: 750;
-  font-size: 38px;
+  font-size: 2.5rem;
 }
 
 label.numeroDocumento {
   font-weight: 900;
-  font-size: 27.3px;
+  font-size: 1.8rem;
   margin-top: 8px;
 }
 
@@ -91,7 +102,9 @@ input#numeroDocumento {
   border-radius: 30px;
   height: 50px;
   width: 65%;
-  padding: 10px;
+  padding: 10px 10px 10px 20px;
+  font-size: 1.4rem;
+  letter-spacing: 0.8rem;
 }
 
 button.btnBuscar {
@@ -101,7 +114,7 @@ button.btnBuscar {
   border-radius: 35px;
   width: 33%;
   height: 7%;
-  font-size: 23px;
+  font-size: 1.4rem;
   font-weight: 900;
 }
 
@@ -160,4 +173,15 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.datos-titulo {
+  list-style: none;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.cuadro > ul {
+  margin-top: 1rem;
+  margin-right: 1rem;
 }

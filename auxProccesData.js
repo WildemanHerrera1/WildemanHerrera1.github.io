@@ -35,9 +35,9 @@ function generateContent(item) {
         });
     } else if (typeof item === 'object') {
         for (const key in item) {
-            content += '<li>' + key + '</li>';
+            content += '<li class="datos-titulo">' + key + '</li>';
             if(key === "RENTA GRANDES CONTRIBUYENTES"){
-              for (let i = 0; i < item[key].length; i++) {
+              for (let i = 0; i < item[key].length; i++) {                
                 content += '<li>' + item[key][i]['cuota'] + ' ' + item[key][i]['fechaClave'] + ' ' + item[key][i]['fechaValor'] + '</li>';
               }
             }else if(key === "RENTA PERSONAS JURIDICAS"){
