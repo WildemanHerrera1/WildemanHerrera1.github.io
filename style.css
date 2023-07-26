@@ -18,52 +18,6 @@ body {
   font-family: 'Montserrat', 'sans-serif';
 }
 
-/* Estilos para pantallas pequeñas (teléfonos móviles) */
-@media (min-width: 300px) and (max-width: 767px) {
-  .ladoIzquierdo {
-      width: 100%;
-      float: none;
-  }
-
-  .ladoDerecho {
-      width: 100%;
-      float: none;
-      margin-top: 20px;
-  }
-
-  .contenedorCuadros {
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 10px;
-  }
-
-  input#numeroDocumento {
-    letter-spacing: 0.1rem;
-  }
-}
-
-/* Estilos para pantallas medianas (tabletas) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .ladoIzquierdo {
-      width: 50%;
-  }
-
-  .ladoDerecho {
-      width: 50%;
-      margin-top: 0;
-  }
-}
-
-/* Estilos para pantallas grandes (computadoras de escritorio) */
-@media (min-width: 992px) {
-  .ladoIzquierdo {
-      width: 40%;
-  }
-
-  .ladoDerecho {
-      width: 60%;
-  }
-}
-
 /* Resto de estilos generales */
 .ladoIzquierdo {
   height: 100%;
@@ -184,4 +138,50 @@ input[type="number"]::-webkit-outer-spin-button {
 .cuadro > ul {
   margin-top: 1rem;
   margin-right: 1rem;
+}
+
+/* Estilos para pantallas pequeñas (teléfonos móviles) */
+@media (min-width: 300px) and (max-width: 767px) {
+  .ladoIzquierdo {
+      width: 100%;
+      float: none;
+  }
+
+  .ladoDerecho {
+      width: 100%;
+      float: none;
+      margin-top: 20px;
+  }
+
+  .contenedorCuadros {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+  }
+
+  input#numeroDocumento {
+    letter-spacing: 0.1rem;
+  }
+}
+
+/* Estilos para pantallas medianas (tabletas) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .ladoIzquierdo {
+      width: 50%;
+  }
+
+  .ladoDerecho {
+      width: 50%;
+      margin-top: 0;
+  }
+}
+
+/* Estilos para pantallas grandes (computadoras de escritorio) */
+@media (min-width: 992px) {
+  .ladoIzquierdo {
+      width: 40%;
+  }
+
+  .ladoDerecho {
+      width: 60%;
+  }
 }
