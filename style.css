@@ -115,7 +115,6 @@ button.btnBuscar {
 .cuadro6,
 .cuadro7 {
   background-color: #252944;
-  color: white;
 }
 
 input:focus {
@@ -159,6 +158,21 @@ input[type="number"]::-webkit-outer-spin-button {
       grid-gap: 10px;
   }
 
+  .cuadro1,
+  .cuadro3,
+  .cuadro5,
+  .cuadro7 {
+    background-color: #bee5f2;
+  }
+  
+  .cuadro2,
+  .cuadro4,
+  .cuadro6,
+  .cuadro8 {
+    background-color: #252944;
+    color: white;
+  }
+
   input#numeroDocumento {
     letter-spacing: 0.1rem;
   }
@@ -175,6 +189,13 @@ input[type="number"]::-webkit-outer-spin-button {
       margin-top: 0;
       overflow: inherit;
   }
+
+  .cuadro2,
+  .cuadro3,
+  .cuadro6,
+  .cuadro7 {
+    color: white;
+  }
 }
 
 /* Estilos para pantallas grandes (computadoras de escritorio) */
@@ -185,5 +206,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .ladoDerecho {
       width: 60%;
+  }
+
+  .cuadro2,
+  .cuadro3,
+  .cuadro6,
+  .cuadro7 {
+    color: white;
   }
 }
