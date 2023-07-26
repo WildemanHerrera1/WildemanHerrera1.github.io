@@ -24,9 +24,12 @@ function ejecutarBusqueda(parametro){
       {"IVA CUATRIMESTRAL - Declaración y pago": fechaCuatrimestre},
       {"CONSUMO - Declaración y pago bimestral del impuesto nacional": consumo},
       {"RETENCIÓN EN LA FUENTE - Declaración mensual": fechaRetencionFuente},
-    ]
+    ];
 
-    return dataCompleta;
+    const cuadros = document.querySelectorAll('.cuadro');
+    for (let i = 0; i < dataCompleta.length; i++) {
+      cuadros[i].innerHTML = generateContent(dataCompleta[i]);
+    }
   })
   .catch(error => console.error(error));
 }

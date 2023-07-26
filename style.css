@@ -1,92 +1,135 @@
-*, ::before, ::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Estilos generales que aplican a todas las pantallas */
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, sans-serif;
 }
 
-.ladoIzquierdo{
-    width: 40%;
-    height: 100%;
-    overflow: hidden;
-    float: left;
-    display: flex;
-    justify-content: center;
-} 
+/* Estilos para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 767px) {
+  .ladoIzquierdo {
+      width: 100%;
+      float: none;
+  }
 
-.ladoIzquierdo .contenidoIzquierdo{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
+  .ladoDerecho {
+      width: 100%;
+      float: none;
+      margin-top: 20px;
+  }
+
+  .contenedorCuadros {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+  }
 }
 
-h1.tituloPrincipal{
-    font-weight: 750;
-    font-size: 38px;
+/* Estilos para pantallas medianas (tabletas) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .ladoIzquierdo {
+      width: 50%;
+  }
+
+  .ladoDerecho {
+      width: 50%;
+      margin-top: 0;
+  }
 }
 
-label.numeroDocumento{
-    font-weight: 900;
-    font-size: 27.3px;
-    margin-top: 8px;
+/* Estilos para pantallas grandes (computadoras de escritorio) */
+@media (min-width: 992px) {
+  .ladoIzquierdo {
+      width: 40%;
+  }
+
+  .ladoDerecho {
+      width: 60%;
+  }
 }
 
-input#numeroDocumento{
-    margin: 10px;
-    background-color: #f2f2f2;
-    border: 1px solid #bee5f2;
-    border-radius: 30px;
-    height: 50px;
-    width: 65%;
-    padding: 10px;
+/* Resto de estilos generales */
+.ladoIzquierdo {
+  height: 100%;
+  overflow: hidden;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-button.btnBuscar{
-    margin: 20px;
-    border: none;
-    background-color: #b58a44;
-    border-radius: 35px;
-    width: 33%;
-    height: 7%;
-    font-size: 23px;
-    font-weight: 900;
+.ladoIzquierdo .contenidoIzquierdo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1.tituloPrincipal {
+  font-weight: 750;
+  font-size: 38px;
+}
+
+label.numeroDocumento {
+  font-weight: 900;
+  font-size: 27.3px;
+  margin-top: 8px;
+}
+
+input#numeroDocumento {
+  margin: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #bee5f2;
+  border-radius: 30px;
+  height: 50px;
+  width: 65%;
+  padding: 10px;
+}
+
+button.btnBuscar {
+  margin: 20px;
+  border: none;
+  background-color: #b58a44;
+  border-radius: 35px;
+  width: 33%;
+  height: 7%;
+  font-size: 23px;
+  font-weight: 900;
 }
 
 .input-group {
-    position: relative;
-    margin-left: 160px;
-  }
-  
+  position: relative;
+  margin-left: 160px;
+}
+
 .icon-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  pointer-events: none;
 }
 
 .icon-wrapper i {
   color: #888;
   margin-left: 320px;
 }
-  
 
 .ladoDerecho {
-    width: 60%;
-    height: 100%;
-    float: left;
-    background-color: #bee5f2;
+  height: 100%;
+  float: left;
+  background-color: #bee5f2;
 }
 
 .contenedorCuadros {
@@ -107,17 +150,21 @@ button.btnBuscar{
 .cuadro8 {
   background-color: #bee5f2;
 }
-  
+
 .cuadro2,
 .cuadro3,
 .cuadro6,
 .cuadro7 {
-  background-color: #252944;
+  background-color: #8ab5c3;
 }
 
 input:focus {
   outline: 0.8px solid #8cc5d7;
 }
 
-
-  
+/* Estilo para ocultar las flechas de incremento y decremento */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

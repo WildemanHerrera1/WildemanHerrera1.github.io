@@ -19,12 +19,12 @@
                 <div class="icon-wrapper">
                   <i class="fas fa-search"></i>
                 </div>
-                <input type="text" id="numeroDocumento" >
+                <input type="number" id="numeroDocumento">
               </div>
             <button class="btnBuscar" onclick="buscarData()">BUSCAR</button>
         </div>
     </section>
-    <section class="ladoDerecho">
+    <section class="ladoDerecho" style="display: none;" id="mostrarData">
         <div class="contenedorCuadros">
           <div class="cuadro cuadro1"></div>
           <div class="cuadro cuadro2"></div>
@@ -36,6 +36,19 @@
           <div class="cuadro cuadro8"></div>
         </div>
     </section>
+
+    <section class="ladoDerechoAuxiliar" id="mostrarDataAux">
+      <div class="contenedorCuadrosBaner">
+        <div class="cuadroBaner cuadroBaner1"></div>
+        <div class="cuadroBaner cuadroBaner2"></div>
+        <div class="cuadroBaner cuadroBaner3"></div>
+        <div class="cuadroBaner cuadroBaner4"></div>
+        <div class="cuadroBaner cuadroBaner5"></div>
+        <div class="cuadroBaner cuadroBaner6"></div>
+        <div class="cuadroBaner cuadroBaner7"></div>
+        <div class="cuadroBaner cuadroBaner8"></div>
+      </div>
+  </section>
     <script src="validar.js"></script>
     <script src="processData.js"></script>
     <script src="auxProccesData.js"></script>

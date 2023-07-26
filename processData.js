@@ -52,7 +52,6 @@ function rentaPersonaJuridica(data, digitos){
       const ultimoDigitoFecha = fechas[dia].slice(-2);
       
       if (digitos === dia) {
-        let valor = mes + cuota;
         return {
           mes: mes,
           cuota: cuota,
