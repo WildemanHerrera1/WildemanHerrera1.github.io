@@ -32,6 +32,16 @@ function buscarDataAux(event){
   }
 }
 
+function limiteCaracteres(){
+  // Limitar cantidad de caracteres a 10
+  const elementNumeroDocumento = document.getElementById("numeroDocumento");
+  let limite = 10;
+  let valor = elementNumeroDocumento.value;
+  if (valor.length >= limite) {
+    elementNumeroDocumento.value = valor.substring(0, limite);
+  }
+}
+
   // Función para generar el contenido en formato HTML
 function generateContent(item) {
     let content = '<ul>';
