@@ -23,7 +23,8 @@ function buscarData(){
     ejecutarBusqueda(valorBuscado);
   }else{
     info.style.display = 'none';
-  }  
+  }
+  scrollToSideBar();
 }
 
 function buscarDataAux(event){
@@ -39,6 +40,14 @@ function limiteCaracteres(){
   let valor = elementNumeroDocumento.value;
   if (valor.length >= limite) {
     elementNumeroDocumento.value = valor.substring(0, limite);
+  }
+}
+
+function scrollToSideBar() {
+  if (screen.width < 768) {
+    document.querySelector(".ladoDerecho").scrollIntoView({
+      behavior: "smooth",
+    });
   }
 }
 
