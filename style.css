@@ -64,7 +64,8 @@ input#numeroDocumento {
 button.btnBuscar {
   margin: 20px;
   border: none;
-  background-color: #b58a44;
+  background-color: #252944;
+  color: white;
   border-radius: 35px;
   width: 33%;
   height: 7%;
