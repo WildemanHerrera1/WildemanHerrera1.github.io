@@ -90,7 +90,7 @@ button.btnBuscar {
   height: 100%;
   float: left;
   background-color: #bee5f2;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .contenedorCuadros {
