@@ -133,11 +133,20 @@ input[type="number"]::-webkit-outer-spin-button {
   list-style: none;
   font-weight: bold;
   margin-bottom: 1.5rem;
+  height: 2rem;
+  text-transform: uppercase;
 }
 
 .cuadro > ul {
   margin-top: 1rem;
   margin-right: 1rem;
+}
+
+.cuadro > ul > li:not(.datos-titulo) {
+  list-style: none;
+  box-shadow: 0px 0px 0px,
+  -0.3em 0.4em 0.4em rgba(0, 0, 0, 0.199);
+  margin-bottom: 1em;
 }
 
 /* Estilos para pantallas pequeñas (teléfonos móviles) */
