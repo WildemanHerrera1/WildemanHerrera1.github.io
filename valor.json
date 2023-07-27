@@ -1,7 +1,7 @@
 {
     "RENTA GRANDES CONTRIBUYENTES": {
-        "1a. cuota": {
-            "hasta": "febrero",
+        "1a. Cuota": {
+            "hasta": "Febrero",
             "fechas": {
                 "1" : 7,
                 "2" : 8,
@@ -15,8 +15,8 @@
                 "0" : 20
             }
         },
-        "2a. cuota": {
-            "hasta": "abril",
+        "2a. Cuota": {
+            "hasta": "Abril",
             "fechas": {
                 "1" : 10,
                 "2" : 11,
@@ -30,8 +30,8 @@
                 "0" : 21
             }
         },
-        "3a. cuota": {
-            "hasta": "junio",
+        "3a. Cuota": {
+            "hasta": "Junio",
             "fechas": {
                 "1" : 7,
                 "2" : 8,
@@ -48,8 +48,8 @@
     },
     "RENTA PERSONAS JURIDICAS": {
         "Declaración y pago":{
-            "abril":{
-                "cuota":"1a. cuota",
+            "Abril":{
+                "cuota":"1a. Cuota",
                 "fechas":{
                     "01": "10",
                     "02": "10",
@@ -128,8 +128,8 @@
                     "75": "28"
                 }
             },
-            "mayo":{
-                "cuota":"1a. cuota",
+            "Mayo":{
+                "cuota":"1a. Cuota",
                 "fechas":{
                     "76": "2",
                     "77": "2",
@@ -158,8 +158,8 @@
                     "00": "8"
                 }
             },
-            "julio": {
-                "cuota":"2a cuota",
+            "Julio": {
+                "cuota":"2a Cuota",
                 "fechas":{
                     "1": "7",
                     "2": "10",
@@ -297,8 +297,8 @@
         "valor": "Las fechas para la presentación de esta declaración son las mismas de Renta, Grandes Contribuyentes, Personas Jurídicas y Personas Naturales."
     },
     "IVA BIMESTRAL - Declaración y pago":{
-        "bimestre 1":{
-            "hasta": "marzo",
+        "Bimestre 1":{
+            "hasta": "Marzo",
             "fechas": {
                 "1" : 7,
                 "2" : 8,
@@ -312,8 +312,8 @@
                 "0" : 21
             }
         },
-        "bimestre 2":{
-            "hasta": "mayo",
+        "Bimestre 2":{
+            "hasta": "Mayo",
             "fechas": {
                 "1" : 9,
                 "2" : 10,
@@ -327,8 +327,8 @@
                 "0" : 23
             }
         },
-        "bimestre 3":{
-            "hasta": "julio",
+        "Bimestre 3":{
+            "hasta": "Julio",
             "fechas": {
                 "1" : 7,
                 "2" : 10,
@@ -342,8 +342,8 @@
                 "0" : 21
             }
         },
-        "bimestre 4":{
-            "hasta": "septiembre",
+        "Bimestre 4":{
+            "hasta": "Septiembre",
             "fechas": {
                 "1" : 7,
                 "2" : 8,
@@ -357,8 +357,8 @@
                 "0" : 20
             }
         },
-        "bimestre 5":{
-            "hasta": "noviembre",
+        "Bimestre 5":{
+            "hasta": "Noviembre",
             "fechas": {
                 "1" : 8,
                 "2" : 9,
@@ -372,8 +372,8 @@
                 "0" : 22
             }
         },
-        "bimestre 6":{
-            "hasta": "enero 2024",
+        "Bimestre 6":{
+            "hasta": "Enero 2024",
             "fechas": {
                 "1" : 10,
                 "2" : 11,
@@ -389,8 +389,8 @@
         }
     },
     "IVA CUATRIMESTRAL - Declaración y pago":{
-        "cuatrimestre 1":{
-            "hasta": "mayo",
+        "Cuatrimestre 1":{
+            "hasta": "Mayo",
             "fechas": {
                 "1" : 9,
                 "2" : 10,
@@ -404,8 +404,8 @@
                 "0" : 23
             }
         },
-        "cuatrimestre 2":{
-            "hasta": "septiembre",
+        "Cuatrimestre 2":{
+            "hasta": "Septiembre",
             "fechas": {
                 "1" : 7,
                 "2" : 8,
@@ -419,8 +419,8 @@
                 "0" : 20
             }
         },
-        "cuatrimestre 3":{
-            "hasta": "enero 2024",
+        "Cuatrimestre 3":{
+            "hasta": "Enero 2024",
             "fechas": {
                 "1" : 10,
                 "2" : 11,
@@ -439,8 +439,8 @@
         "valor": "En las mismas fechas que el impuesto sobre las ventas bimestral (incluyendo bolsas plásticas y cannabis)."
     },
     "RETENCIÓN EN LA FUENTE - Declaración mensual":{
-        "enero":{
-            "hasta": "febrero",
+        "Enero":{
+            "hasta": "Febrero",
             "fechas":{
                 "1": "7",
                 "2": "8",
@@ -454,8 +454,8 @@
                 "0": "20"
             }
         },
-        "febrero":{
-            "hasta": "marzo",
+        "Febrero":{
+            "hasta": "Marzo",
             "fechas":{
                 "1": "7",
                 "2": "8",
@@ -469,8 +469,8 @@
                 "0": "21"
             }
         },
-        "marzo":{
-            "hasta": "abril",
+        "Marzo":{
+            "hasta": "Abril",
             "fechas":{
                 "1": "10",
                 "2": "11",
@@ -484,8 +484,8 @@
                 "0": "21"
             }
         },
-        "abril":{
-            "hasta": "mayo",
+        "Abril":{
+            "hasta": "Mayo",
             "fechas":{
                 "1": "9",
                 "2": "10",
@@ -499,8 +499,8 @@
                 "0": "23"
             }
         },
-        "mayo":{
-            "hasta": "junio",
+        "Mayo":{
+            "hasta": "Junio",
             "fechas":{
                 "1": "7",
                 "2": "8",
@@ -514,8 +514,8 @@
                 "0": "22"
             }
         },
-        "junio":{
-            "hasta": "julio",
+        "Junio":{
+            "hasta": "Julio",
             "fechas":{
                 "1": "7",
                 "2": "10",
@@ -529,8 +529,8 @@
                 "0": "21"
             }
         },
-        "julio":{
-            "hasta": "agosto",
+        "Julio":{
+            "hasta": "Agosto",
             "fechas":{
                 "1": "9",
                 "2": "10",
@@ -544,8 +544,8 @@
                 "0": "23"
             }
         },
-        "agosto":{
-            "hasta": "septiembre",
+        "Agosto":{
+            "hasta": "Septiembre",
             "fechas":{
                 "1": "7",
                 "2": "8",
@@ -559,8 +559,8 @@
                 "0": "20"
             }
         },
-        "septiembre":{
-            "hasta": "octubre",
+        "Septiembre":{
+            "hasta": "Octubre",
             "fechas":{
                 "1": "10",
                 "2": "11",
@@ -574,8 +574,8 @@
                 "0": "24"
             }
         },
-        "octubre":{
-            "hasta": "noviembre",
+        "Octubre":{
+            "hasta": "Noviembre",
             "fechas":{
                 "1": "8",
                 "2": "9",
@@ -589,8 +589,8 @@
                 "0": "22"
             }
         },
-        "noviembre":{
-            "hasta": "diciembre",
+        "Noviembre":{
+            "hasta": "Diciembre",
             "fechas":{
                 "1": "11",
                 "2": "12",
@@ -604,8 +604,8 @@
                 "0": "22"
             }
         },
-        "diciembre":{
-            "hasta": "enero 2024",
+        "Diciembre":{
+            "hasta": "Enero 2024",
             "fechas":{
                 "1": "10",
                 "2": "11",
