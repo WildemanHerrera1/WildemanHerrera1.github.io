@@ -44,8 +44,7 @@ function limiteCaracteres(){
     elementNumeroDocumento.value = valor.substring(0, limite);
     elementNumeroDocumento.style.outline = 'none';
     error.style.display = 'none';
-  }
-  if(valor.length <= limite){
+  }else if(valor.length <= limite){
     elementNumeroDocumento.style.outline = 'none';
     elementNumeroDocumento.style.outline = '0.8px solid #ff0000';
     error.style.display = 'block';
