@@ -15,14 +15,15 @@ function buscarNumeroEnClaves(numero, fechas) {
 function buscarData(){
   let elemento = document.getElementById("numeroDocumento");
   let info = document.getElementById("mostrarData");
-  if(info.style.display != 'block'){
-    info.style.display = 'block';
-  }
+  let estilos = window.getComputedStyle(elemento);
   let valorBuscado = elemento.value;
   if(valorBuscado != ''){
     ejecutarBusqueda(valorBuscado);
+    if(estilos.outline == "rgb(255, 0, 0) solid 1.11111px"){
+      elemento.style.outline = 'none';
+    }
   }else{
-    info.style.display = 'none';
+    elemento.style.outline = '0.8px solid #ff0000';
   }
   scrollToSideBar();
 }
@@ -36,10 +37,18 @@ function buscarDataAux(event){
 function limiteCaracteres(){
   // Limitar cantidad de caracteres a 10
   const elementNumeroDocumento = document.getElementById("numeroDocumento");
+  const error = document.querySelector('.alert-error');
   let limite = 10;
   let valor = elementNumeroDocumento.value;
-  if (valor.length >= limite) {
+  if(valor.length >= limite) {
     elementNumeroDocumento.value = valor.substring(0, limite);
+    elementNumeroDocumento.style.outline = 'none';
+    error.style.display = 'none';
+  }
+  if(valor.length <= limite){
+    elementNumeroDocumento.style.outline = 'none';
+    elementNumeroDocumento.style.outline = '0.8px solid #ff0000';
+    error.style.display = 'block';
   }
 }
 

@@ -150,6 +150,11 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-bottom: 1em;
 }
 
+.alert-error {
+  display: none;
+  color: red;
+}
+
 /* Estilos para pantallas pequeñas (teléfonos móviles) */
 @media (min-width: 300px) and (max-width: 767px) {
   .ladoIzquierdo {
