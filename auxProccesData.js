@@ -14,11 +14,12 @@ function buscarNumeroEnClaves(numero, fechas) {
 
 function buscarData(){
   let elemento = document.getElementById("numeroDocumento");
+  let tipoDocumento = document.getElementById("tipoDocumento").value;
   let info = document.getElementById("mostrarData");
   let estilos = window.getComputedStyle(elemento);
   let valorBuscado = elemento.value;
-  if(valorBuscado != ''){
-    ejecutarBusqueda(valorBuscado);
+  if(valorBuscado != '' && tipoDocumento != ''){
+    ejecutarBusqueda(valorBuscado, tipoDocumento);
     if(estilos.outline == "rgb(255, 0, 0) solid 1.11111px"){
       elemento.style.outline = 'none';
     }
