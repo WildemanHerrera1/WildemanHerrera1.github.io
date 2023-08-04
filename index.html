@@ -35,7 +35,7 @@
             <br>
             <label for="tipoDocumento" class="numeroDocumento">TIPO DOCUMENTO</label>
             <div class="input-group">
-              <select id="tipoDocumento" name="tipoDocumento">
+              <select id="tipoDocumento" name="tipoDocumento" onchange="limiteCaracteres()">
                 <option value=""></option>
                 <option value="CC">PERSONA NATURAL</option>
                 <option value="NIT">PERSONA JURÍDICA</option>
