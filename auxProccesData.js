@@ -15,7 +15,6 @@ function buscarNumeroEnClaves(numero, fechas) {
 function buscarData(){
   let elemento = document.getElementById("numeroDocumento");
   let tipoDocumento = document.getElementById("tipoDocumento").value;
-  let info = document.getElementById("mostrarData");
   let estilos = window.getComputedStyle(elemento);
   let valorBuscado = elemento.value;
   if(valorBuscado != '' && tipoDocumento != ''){
@@ -38,8 +37,14 @@ function buscarDataAux(event){
 function limiteCaracteres(){
   // Limitar cantidad de caracteres a 10
   const elementNumeroDocumento = document.getElementById("numeroDocumento");
+  const tipoDocumento = document.getElementById("tipoDocumento").value;
   const error = document.querySelector('.alert-error');
-  let limite = 10;
+  let limite = 0;
+  if(tipoDocumento == "NIT"){
+    limite = 9;
+  }else{
+    limite = 10;
+  }
   let valor = elementNumeroDocumento.value;
   if(valor.length >= limite) {
     elementNumeroDocumento.value = valor.substring(0, limite);
