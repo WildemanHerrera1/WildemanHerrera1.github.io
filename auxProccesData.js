@@ -1,3 +1,5 @@
+window.addEventListener("load", redirectToHttps);
+
 function buscarNumeroEnClaves(numero, fechas) {
     let meses = ['', 'agosto','septiembre','octubre']
     let cantidadMeses = -1;
@@ -105,4 +107,12 @@ function generateContent(item) {
     }
     content += '</ul>';
     return content;
+}
+
+// Verifica si el protocolo actual es HTTP
+function redirectToHttps() {
+  if (window.location.protocol === 'http:') {
+    var newUrl = 'https:' + window.location.href.substring(5);
+    window.location.href = newUrl;
+  }
 }
