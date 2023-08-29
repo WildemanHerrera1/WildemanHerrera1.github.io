@@ -46,6 +46,10 @@ body {
 
 .categoria-title {
 	text-align: center;
+	background-color: #FAFAF8;
+	/*	Dejar el titlo al hacer scroll	*/
+	position: sticky;
+    top: 0px;
 }
 
 .comentario {
@@ -83,10 +87,17 @@ body {
 }
 
 .celda-dias {
-	position: relative;
-    bottom: 10px;
     font-weight: bold;
 	border-width: 1px;
 	border-style: none none solid none;
 	border-color: #dee2e6;
+}
+
+.celda-digitos {
+	height: 3rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
