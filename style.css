@@ -52,6 +52,14 @@ body {
     top: 0px;
 }
 
+.categoria-title::after{
+	content: '¡IMPORTANTE! Tab o Clic en el recuadro del calendario para agregar a Google Calendar';
+	display: block;
+	font-size: 0.8rem;
+	margin-top: 0.5rem;
+	color: #252944;
+}
+
 .comentario {
 	font-size: 0.8rem;
 }
@@ -107,6 +115,12 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.celda-digitos > * {
+	font-size: 1.1rem;
+	border: 0.1rem #252944;
+	border-style: none none solid none;
 }
 
 .scroll-top {
