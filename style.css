@@ -101,3 +101,25 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+
+.scroll-top {
+	display: none;
+	width: 3em;
+	height: 3em;
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	border-radius: 2em;
+	border: 1px solid #dee2e6;
+	background-color: rgba(37, 41, 68, 0.565);
+}
+
+.scroll-top::after {
+	/* ↑ */
+	content: '↑';
+	position: relative;
+    top: 0.1em;
+    left: 0.44em;
+	font-size: 2em;
+	color: #dee2e6;
+}
