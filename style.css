@@ -86,6 +86,13 @@ body {
 	flex-shrink: 5;
 }
 
+.cuadricula-celda:hover {
+	-webkit-box-shadow: 6px 5px 12px -3px rgba(37,41,68,0.5);
+	-moz-box-shadow: 6px 5px 12px -3px rgba(37,41,68,0.5);
+	box-shadow: 6px 5px 12px -3px rgba(37,41,68,0.5);
+	background-color: #dee2e66b;
+}
+
 .celda-dias {
     font-weight: bold;
 	border-width: 1px;
