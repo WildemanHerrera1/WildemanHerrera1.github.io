@@ -18,6 +18,37 @@
     crossorigin="anonymous"></script>
 	<script src="calendar.js"></script>
 	<script src="events.js"></script>
+	<style>
+.accordion {
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .accordion-item {
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .accordion-button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 15px;
+    }
+
+    .active .accordion-content {
+      display: block;
+    }
+
+
+	</style>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQF19XY49E"></script>
@@ -30,6 +61,91 @@
 </script>
 <body>
 	<h1 class="title">Calendario Tributario</h1>
+	<section>
+		<div class="faq-card">
+			<main class="faq-content">
+				<div class="faq-articles">
+					<article class="faq-accordion">
+						<input type="checkbox" class="tgg-title" id="tgg-title-1">
+						<div class="faq-accordion-title">
+							<label for="tgg-title-1">
+								<h2>Que es una declaración de renta?</h2>
+								<span class="arrow-icon">
+									<img class="arrow-down" src="./down-arrow-svgrepo-com.svg">
+								</span>
+							</label>
+						</div>
+						<div class="faq-accordion-content">
+							<p>La declaración de renta es un documento obligatorio que se presenta ante la DIAN cada año. En ella, las personas naturales y jurídicas reportan sus ingresos y gastos del año anterior, para que el gobierno calcule cuánto impuesto a la renta deben pagar.
+							</p>
+						</div>
+					</article> <!-- faq accordion -->
+
+					<article class="faq-accordion">
+						<input type="checkbox" class="tgg-title" id="tgg-title-2">
+						<div class="faq-accordion-title">
+							<label for="tgg-title-2">
+								<h2>
+								Por que se declara renta?
+								</h2>
+								<span class="arrow-icon">
+									<img class="arrow-down" src="./down-arrow-svgrepo-com.svg">
+								</span>
+							</label>
+						</div>
+						<div class="faq-accordion-content">
+							<p>
+								Se declara renta para contribuir al financiamiento de los gastos públicos del país.
+							</p>
+							<p>
+								Los impuestos recaudados por la declaración de renta se utilizan para financiar una amplia gama de servicios públicos, como educación, salud, seguridad, infraestructura, etc. Estos servicios son esenciales para el desarrollo del país y para garantizar el bienestar de sus ciudadanos.
+							</p>
+							<p>
+								De acuerdo con la página de la DIAN, en 2022, la declaración de renta recaudó $130,7 billones de pesos. Esta cifra representa el 28% de los ingresos totales del Estado colombiano.
+							</p>
+							<p>
+								La declaración de renta es un deber ciudadano que todos debemos cumplir. Al declarar renta, contribuimos al desarrollo de nuestro país y al bienestar de todos sus ciudadanos.
+							</p>
+						</div>
+					</article> <!-- faq accordion -->
+			
+					<article class="faq-accordion">
+						<input class="tgg-title" type="checkbox" id="tgg-title-3">
+						<div class="faq-accordion-title">
+							<label for="tgg-title-3">
+								<h2>
+								Que es un calendario tributario?
+								</h2>
+								<span class="arrow-icon">
+									<img class="arrow-down" src="./down-arrow-svgrepo-com.svg">
+								</span>
+							</label>
+						</div>
+						<div class="faq-accordion-content">
+							<ul>
+								<li>
+									Un calendario tributario es un documento que establece los plazos y fechas para la presentación de declaraciones y pago de impuestos en un país.
+								</li>
+								<li>
+									En Colombia, el calendario tributario es establecido por la Dirección de Impuestos y Aduanas Nacionales (DIAN).
+								</li>
+								<li>
+									El calendario tributario de Colombia se publica en el sitio web de la DIAN.
+								</li>
+								<li>
+									El calendario tributario se actualiza anualmente para reflejar los cambios en las leyes tributarias.
+								</li>
+								<li>
+									La DIAN ofrece una serie de recursos para ayudar a los contribuyentes a comprender el calendario tributario
+								</li>
+							</ul>
+						</div>
+					</article> <!-- faq accordion -->
+
+				</div> <!-- faq articles -->
+			</main> <!-- faq -->
+		</div> <!-- faq card -->
+	</section>
 	<section class="calendario">
 		<div class="calendario-categoria">
 			<h1 class="categoria-title">RENTA GRANDES CONTRIBUYENTES</h1>
