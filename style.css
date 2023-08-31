@@ -280,3 +280,12 @@ input.tgg-title {
 .arrow-down {
 	width: 0.8rem;
 }
+
+.footer {
+	margin: 1rem;
+	padding: 1rem;
+}
+
+.footer > * {
+	font-weight: bold;
+}
